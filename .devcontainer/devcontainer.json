@@ -1,0 +1,14 @@
+{
+    "name": "GitHub Copilot Starter",
+    "image": "mcr.microsoft.com/devcontainers/anaconda:1",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "GitHub.copilot",
+                "GitHub.copilot-chat",
+                "ms-python.python"
+            ]
+        }
+    },
+    "postCreateCommand": "gh extension install github/gh-copilot 2>/dev/null || true"
+}
